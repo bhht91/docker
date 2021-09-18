@@ -5,5 +5,5 @@ RUN yum install -y curl
 RUN yum install -y vim
 RUN yum install -y tree
 RUN yum install -y httpd
-CMD ["httpd","-S", "FOREGROUND"]
+CMD ["/usr/sbin/httpd","-D", "FOREGROUND"]
 EXPOSE 80
